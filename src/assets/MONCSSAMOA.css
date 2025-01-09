@@ -10,10 +10,38 @@
 }
 
 .logoHeader {
-    width : 25%;
+    width : 16%;
+}
+
+
+
+.containdBody {
+    width : 80%;
+    margin : 0;
 }
 
 .mainBody {
-    width : 80%;
-    margin : 0;
+    padding : 1em;
+    background-color: #ffd966;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color : rgb(255, 255, 255);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border : 2px solid #ffffff;
+    padding : 1%;
+}
+
+.decoButton {
+    background-color: #c00000;
+    border-radius: 0.5em;
+    border: 0;
+    padding: 0.5em;
+    color: white;
 }
