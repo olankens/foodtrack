@@ -4,14 +4,127 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FOODTRACK: ADMIN</title>
-    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../assets/style.css" />
     <style>
-      /* Place current css style here */
+      .heading {
+        .heading-body {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 60px;
+          .heading-next {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            button {
+              background: #c00000;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .content {
+        color: #fff;
+        padding: 2rem 0 1rem 0;
+        .container {
+          padding: 2rem;
+          background: #c00000;
+        }
+        .content-head {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h1 {
+            text-align: left;
+          }
+          button {
+            background: #00bd0d;
+            color: #fff;
+            height: 2rem;
+          }
+        }
+        .content-body {
+          padding: 2rem 0 1rem 0;
+          table {
+            border-collapse: collapse;
+            border: 1px solid #000;
+            width: 100%;
+            td {
+              border: 1px solid #000;
+            }
+          }
+        }
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
     </style>
   </head>
   <body>
-    <!-- Admin body here -->
-    ADMIN
+    <!-- HEADING -->
+    <div class="heading">
+      <div class="container">
+        <!-- HEADING LOGO -->
+        <div class="heading-body">
+          <img src="../assets/logo.png" alt="logo" height="100%" />
+          <div class="heading-next">
+            <p>GESTION FT</p>
+            <button>Deconnexion</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="container">
+        <!-- CONTENT HEAD -->
+        <div class="content-head">
+          <h1>PLANNING</h1>
+          <button>Ajouter</button>
+        </div>
+
+        <!-- CONTENT BODY -->
+        <div class="content-body">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Nom</th>
+                <th>Statut</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01/01/2025</td>
+                <td>Jean Dupont</td>
+                <td>Actif</td>
+                <td><button>Modifier</button></td>
+                <td><button>Supprimer</button></td>
+              </tr>
+              <tr>
+                <td>05/02/2025</td>
+                <td>Marie Curie</td>
+                <td>Inactif</td>
+                <td><button>Modifier</button></td>
+                <td><button>Supprimer</button></td>
+              </tr>
+              <tr>
+                <td>12/03/2025</td>
+                <td>Pierre Martin</td>
+                <td>Actif</td>
+                <td><button>Modifier</button></td>
+                <td><button>Supprimer</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
