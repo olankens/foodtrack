@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .heading {
+        .heading-body {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 60px;
+          .heading-next {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            button {
+              background: #c00000;
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .content {
+        background-color: #e69138;
+        width: 80%;
+        margin: 80px auto;
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+        color: #fff;
+      }
+
+      label {
+        color: white;
+      }
+
+      .comment {
+        width: 90%;
+        padding: 5px;
+      }
+
+      .button-sub {
+        background: #01f43a;
+        color: #fff;
+      }
+      .button-reset {
+        background: #c00000;
+        color: #fff;
+      }
+      div {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <div class="container">
+        <!-- HEADING LOGO -->
+        <div class="heading-body">
+          <img src="../assets/logo.png" alt="logo" height="100%" />
+          <div class="heading-next">
+            <p>GESTION FT</p>
+            <button>Deconnexion</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div>
+        <h1>Je décline</h1>
+      </div>
+      <div>
+        <form action="validation.php" method="POST">
+          <div class="form">
+            <label for="date-id">Date: </label>
+            <input type="date" name="date" id="date-id" />
+          </div>
+          <div class="form">
+            <label for="comment-id">Commentaire: </label>
+            <input class="comment" type="text" name="comment" id="comment-id" />
+          </div>
+          <div>
+            <button class="button-sub" type="submit">Confirmer</button>
+            <button class="button-reset" type="submit">Annuler</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
