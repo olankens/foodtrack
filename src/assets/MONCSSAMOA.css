@@ -1,10 +1,17 @@
-.flexHeader, .mainBody {
+.flexHeader, .mainBody, .sectionFlex {
     display : flex;
 }
 
+ .sectionFlex, .flexHeader, .containedBody, .mainBody  {
+    align-items: center;
+ }
+
+ .sectionFlex {
+    justify-content: center;
+ }
+
 .flexHeader {
     justify-content: space-between;
-    align-items: center;
     gap: 10em;
     margin : 0 1%;
 }
@@ -13,28 +20,39 @@
     width : 16%;
 }
 
+.maxWidth {
+    width : 100%;
+}
 
+.flexHeader {
+    margin-bottom: 2%;
+}
 
-.containdBody {
-    width : 80%;
-    margin : 0;
+.containedBody {
+    width : 70%;
 }
 
 .mainBody {
     padding : 1em;
-    background-color: #ffd966;
+    background-color: #c00000;
     justify-content: center;
+    
     flex-direction: column;
-    align-items: center;
     color : rgb(255, 255, 255);
+}
+
+.foodTruckCoordTH {
+    min-width: 15%;
+    color : #000;
 }
 
 table {
     border-collapse: collapse;
+    background-color: #fff;
 }
 
 th {
-    border : 2px solid #ffffff;
+    border : 2px solid #000000;
     padding : 1%;
 }
 
