@@ -4,14 +4,113 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FOODTRACK: LOGIN</title>
-    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/style.css" />
     <style>
-      /* Place current css style here */
+      img {
+        width: 300px;
+      }
+
+      .log {
+        background-color: #ffd966;
+        padding: 25px;
+        max-width: 900px;
+        margin: 80px auto;
+      }
+
+      h2 {
+        color: white;
+        font-size: 2rem;
+        width: 100%;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .log-admin,
+      .log-truck {
+        width: 50%;
+        text-align: center;
+      }
+
+      input {
+        display: inline-block;
+        width: 50%;
+        margin-bottom: 5px;
+        border-radius: 7px;
+        border: 0;
+        padding: 5px;
+      }
+
+      .button-admin {
+        background-color: #c00000;
+      }
+
+      .button-truck {
+        background-color: #e69138;
+      }
+
+      button {
+        width: 52%;
+        border-radius: 5px;
+        border: 0;
+        padding: 5px;
+        color: white;
+      }
     </style>
   </head>
   <body>
-    <!-- Login body here -->
-    LOGIN
+    <header>
+      <img src="../assets/logo.png" alt="Logo FoodTrack" />
+    </header>
+    <div class="log">
+      <h2>Log In</h2>
+      <div class="flex">
+        <div class="log-truck">
+          <form action="truck.html">
+            <input
+              type="text"
+              name="user"
+              id="user-id"
+              placeholder="Username"
+            />
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="password-id"
+              placeholder="Password"
+            />
+            <br />
+            <button class="button-truck" type="submit">
+              Se connecter en tant que food truck
+            </button>
+          </form>
+        </div>
+        <div class="log-admin">
+          <form action="admin.html">
+            <input
+              type="text"
+              name="user"
+              id="user-id"
+              placeholder="Username"
+            />
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="password-id"
+              placeholder="Password"
+            />
+            <br />
+            <button class="button-admin" type="submit">
+              Se connecter en tant qu'admin
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+```
