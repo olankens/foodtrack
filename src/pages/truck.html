@@ -4,14 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FOODTRACK: TRUCK</title>
-    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/style.css" />
     <style>
-      /* Place current css style here */
+      .heading {
+        background: #000;
+        .heading-logo {
+          height: 60px;
+        }
+      }
+      .content {
+        background: #e69138;
+        color: #fff;
+        padding: 2rem 0 1rem 0;
+        .content-head {
+          h1 {
+            text-align: left;
+          }
+        }
+        .content-body {
+          padding: 2rem 0 1rem 0;
+          table {
+            border-collapse: collapse;
+            border: 1px solid #000;
+            width: 100%;
+            td {
+              border: 1px solid #000;
+            }
+          }
+        }
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
     </style>
   </head>
   <body>
-    <!-- Truck body here -->
-    TRUCK
+    <!-- HEADING -->
+    <div class="heading">
+      <div class="container">
+        <!-- HEADING LOGO -->
+        <div class="heading-logo">
+          <img src="../assets/logo.png" alt="logo" height="100%" />
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="container">
+        <!-- CONTENT HEAD -->
+        <div class="content-head">
+          <h1>PLANNING</h1>
+        </div>
+
+        <!-- CONTENT BODY -->
+        <div class="content-body">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Nom</th>
+                <th>Statut</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01/01/2025</td>
+                <td>Jean Dupont</td>
+                <td>Actif</td>
+                <td><button>Modifier</button></td>
+                <td><button>Supprimer</button></td>
+              </tr>
+              <tr>
+                <td>05/02/2025</td>
+                <td>Marie Curie</td>
+                <td>Inactif</td>
+                <td><button>Modifier</button></td>
+                <td><button>Supprimer</button></td>
+              </tr>
+              <tr>
+                <td>12/03/2025</td>
+                <td>Pierre Martin</td>
+                <td>Actif</td>
+                <td><button>Modifier</button></td>
+                <td><button>Supprimer</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
