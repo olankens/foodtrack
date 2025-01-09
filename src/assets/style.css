@@ -13,8 +13,16 @@
   width: 200px;
 }
 
+.header-left{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+
+
 .connexion button{
-  background-color: rgb(174, 0, 0);
+  background-color: rgb(199, 61, 61);
   border-radius: 5px;
   color:white;
   padding: 5px 15px;
@@ -22,7 +30,7 @@
 
 
 .mainBody {
-  background-color: rgb(255, 226, 110);
+  background-color: rgb(220, 50, 50);
   max-width: 950px;
   margin: auto;
   height: 400px;
@@ -54,9 +62,43 @@ tbody tr:nth-child(odd) {
 tr {
   margin-right: 20px;
   text-align: left;
+  align-items: center;
 }
 
-.vege, .burger, .viande{
+.calendrier{
+  width: 20px;
+  margin-left: 10px;
+}
+
+.vege, .burger, .viander{
   width: 15px;
   align-items: center;
+}
+
+.bloc-date {
+  margin: auto;
+  width: 500px;
+}
+
+.ajouter button{
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+span, p {
+  color: white;
+}
+
+.datte {
+  padding-right: 100px;
+}
+
+.ajouter {
+  padding-left: 140px;
+}
+
+#idDuSelect {
+  margin-left: 75px;
 }
