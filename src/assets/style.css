@@ -1,57 +1,104 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.flexHeader {
+  display : flex;
+  justify-content: space-between;
+  gap: 10em;
+  align-items: center;
 }
 
-* {
-  margin: 0;
+.flexHeader a {
+  align-items: center;
 }
 
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+.logo {
+  width: 200px;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
+.header-left{
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
+
+
+.connexion button{
+  background-color: rgb(199, 61, 61);
+  border-radius: 5px;
+  color:white;
+  padding: 5px 15px;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
+
+.mainBody {
+  background-color: rgb(220, 50, 50);
+  max-width: 950px;
+  margin: auto;
+  height: 400px;
 }
 
-p {
-  text-wrap: pretty;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
+h1 {
+  color: white;
+  padding-left: 135px;
+  padding-top: 15px;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#root,
-#__next {
-  isolation: isolate;
+table{
+  background-color: white;
+  margin: auto;
+  border: 1px solid black;
+}
+
+thead {
+  border: 1px solid black;
+  
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+
+tr {
+  margin-right: 20px;
+  text-align: left;
+  align-items: center;
+}
+
+.calendrier{
+  width: 20px;
+  margin-left: 10px;
+}
+
+.vege, .burger, .viander{
+  width: 15px;
+  align-items: center;
+}
+
+.bloc-date {
+  margin: auto;
+  width: 500px;
+}
+
+.ajouter button{
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+span, p {
+  color: white;
+}
+
+.datte {
+  padding-right: 100px;
+}
+
+.ajouter {
+  padding-left: 140px;
+}
+
+#idDuSelect {
+  margin-left: 75px;
 }
