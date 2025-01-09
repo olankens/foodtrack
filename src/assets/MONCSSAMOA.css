@@ -1,0 +1,19 @@
+.flexHeader, .mainBody {
+    display : flex;
+}
+
+.flexHeader {
+    justify-content: space-between;
+    align-items: center;
+    gap: 10em;
+    margin : 0 1%;
+}
+
+.logoHeader {
+    width : 25%;
+}
+
+.mainBody {
+    width : 80%;
+    margin : 0;
+}
