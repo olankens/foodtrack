@@ -4,14 +4,123 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FOODTRACK: LOGIN</title>
-    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/style.css" />
     <style>
-      /* Place current css style here */
+      img {
+        width: 300px;
+      }
+
+      .log {
+        background-color: #ffd966;
+        padding: 25px;
+        max-width: 900px;
+        margin: 80px auto;
+      }
+
+      h2 {
+        color: white;
+        font-size: 2.3rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .log-truck {
+        width: 100%;
+        text-align: center;
+      }
+
+      input {
+        display: inline-block;
+        width: 200px;
+        margin-bottom: 5px;
+        border-radius: 7px;
+        border: 0;
+        padding: 5px;
+      }
+
+      button {
+        width: 100px;
+        border-radius: 5px;
+        border: 0;
+        padding: 5px;
+        color: white;
+        background-color: #c00000;
+        margin-top: 20px;
+      }
+
+      .admin {
+        background-color: #e7b51c;
+        width: 50%;
+        margin: 25px auto;
+        padding: 25px;
+        border: 2px solid black;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+
+      label {
+        color: white;
+        font-size: 1.2rem;
+      }
+
+      a {
+        display: block;
+        text-align: center;
+        margin: 5px;
+      }
+
+      table {
+        margin: 0 auto;
+      }
+
+      .label {
+        text-align: right;
+      }
     </style>
   </head>
   <body>
-    <!-- Login body here -->
-    LOGIN
+    <header>
+      <img src="../assets/logo.png" alt="Logo FoodTrack" />
+    </header>
+    <div class="log">
+      <h2>Formulaire de connexion</h2>
+
+      <div class="log-truck">
+        <form action="validate.php" method="POST">
+          <table>
+            <tr>
+              <td class="label">
+                <label for="user-id">Nom d'utilisateur: </label>
+              </td>
+              <td><input type="text" name="user" id="user-id" /></td>
+            </tr>
+            <tr>
+              <td class="label">
+                <label for="password-id">Mot de Passe: </label>
+              </td>
+              <td>
+                <input type="password" name="password" id="password-id" />
+              </td>
+            </tr>
+          </table>
+
+          <button class="button-truck" type="submit">Se connecter</button>
+        </form>
+      </div>
+      <div class="admin">
+        <h3>En tant que:</h3>
+        <a href="admin.html">Responsable RF</a>
+        <a href="truck.html">Gérant Food Truck</a>
+      </div>
+    </div>
   </body>
 </html>
