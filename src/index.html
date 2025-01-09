@@ -1,17 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FOODTRACK</title>
     <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/style.css" />
-    <style>
-      /* Place current css style here */
-    </style>
+    <link rel="stylesheet" href="assets/MONCSSAMOA.css" />
+    
   </head>
   <body>
-    <!-- Select guest/truck/admin here -->
-    INDEX
+    <header>
+      <div class="flexHeader">
+        <img class="logo" src="assets/logo.png" alt="Logo FoodTrack">
+        <div class="connexion"><a href="pages/login.html"><button>Connexion</button></a></div>
+      </div>
+    </header>
+    <section>
+      <div class="mainBody">
+        <h1>Planning</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Nom du Foodtruck</th>
+              <th>Type de (mal)bouffe</th>
+              <th>Adresse du site web</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>05-03-2025</th>
+              <th>Tata Yoyo</th>
+              <th>Végétarien <img class="vege" src="/src/assets/icone-vegetarien.png" alt=""></th>
+              <th><a href="">www.yoyotata.be</a></th>
+            </tr>
+            <tr>
+              <th>12-03-2025</th>
+              <th>Bouffator Maximus</th>
+              <th>Burgers et frites <img class="burger" src="/src/assets/icone-burgerFrite.png" alt=""></th>
+              <th><a href="">www.boufferetdonnezmoivotreargent.be</a></th>
+            </tr>
+            <tr>
+              <th>19-03-2025</th>
+              <th>The book of heavy metal</th>
+              <th>Viandes et sang frais <img class="viande" src="/src/assets/icone-viande.png" alt=""></th>
+              <th><a href="">www.hailsatanandsaucage.be</a></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
   </body>
 </html>
